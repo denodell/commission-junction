@@ -2,8 +2,24 @@
   "name": "commission-junction",
   "version": "0.0.1",
   "description": "Commission Junction API Helper Methods For Node / JavaScript",
-  "author": "Den Odell <den@pixeldandy.com>",
+  "author": {
+    "name": "Den Odell",
+    "email": "denodell@me.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:denodell/commission-junction.git"
+  },
+  "bugs": {
+    "url": "https://github.com/denodell/commission-junction/issues"
+  },
+  "licenses": [{
+    "type": "MIT",
+    "url": "https://github.com/denodell/commission-junction/blob/master/LICENSE"
+  }],
+  "main": "dist/index.js",
   "scripts": {
+    "postinstall": "npm run build",
     "build": "webpack --colors  --display-error-details --config ./webpack.js",
     "watch": "webpack --watch --verbose --colors --display-error-details --config ./webpack.js",
     "start": "node dist/index.js",

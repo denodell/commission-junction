@@ -8,10 +8,20 @@ Contains utilities to simplify interaction with the Commission Junction Affiliat
  - Products
  - Transactions
 
+## Dependencies
+
+ - Node.js / NPM
+
 ## Install
 
 ```
-npm i affiliate-networks --save
+npm i commission-junction --save
+```
+
+## Test
+
+```
+npm test
 ```
 
 ## Usage
