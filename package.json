@@ -1,0 +1,42 @@
+{
+  "name": "commission-junction",
+  "version": "0.0.1",
+  "description": "Commission Junction API Helper Methods For Node / JavaScript",
+  "author": "Den Odell <den@pixeldandy.com>",
+  "scripts": {
+    "build": "webpack --colors  --display-error-details --config ./webpack.js",
+    "watch": "webpack --watch --verbose --colors --display-error-details --config ./webpack.js",
+    "start": "node dist/index.js",
+    "test": "ava"
+  },
+  "ava": {
+    "babel": "inherit",
+    "failFast": true,
+    "verbose": true,
+    "require": [
+      "babel-core/register",
+      "babel-polyfill"
+    ]
+  },
+  "dependencies": {
+    "babel-core": "^6.10.4",
+    "babel-eslint": "^6.0.5",
+    "babel-loader": "^6.2.4",
+    "babel-polyfill": "^6.9.1",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "dateformat": "^1.0.12",
+    "es6-promise": "^3.2.1",
+    "isomorphic-fetch": "^2.2.1",
+    "lodash": "^4.13.1",
+    "object-assign": "^4.1.0",
+    "source-map-support": "^0.4.0",
+    "webpack": "^1.13.1",
+    "webpack-node-externals": "^1.2.0",
+    "xml2js": "^0.4.16"
+  },
+  "devDependencies": {
+    "ava": "^0.15.2",
+    "ava-spec": "^1.0.1"
+  }
+}
