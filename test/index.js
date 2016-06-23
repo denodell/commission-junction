@@ -11,20 +11,20 @@ describe(`Commission Junction`, it => {
 	  })
 	})
 
-	it.cb(`All merchants = Joined merchants + Not-joined merchants`, expect => {
-		Promise.all([
-			CJ.getJoinedMerchants(),
-			CJ.getNotJoinedMerchants(),
-			CJ.getAllMerchants()
-		]).then((joinedMerchants, notJoinedMerchants, allMerchants) => {
-			expect.true(allMerchants.length === joinedMerchants.length + notJoinedMerchants.length)
+	it.skip(`All advertisers = Joined advertisers + Not-joined advertisers`, expect => {
+		return Promise.all([
+			CJ.getAdvertisers({ joined: true }),
+			CJ.getAdvertisers({ joined: false }),
+			CJ.getAdvertisers()
+		]).then((joinedAdvertisers, notJoinedAdvertisers, allAdvertisers) => {
+			expect.true(allAdvertisers.length === joinedAdvertisers.length + notJoinedAdvertisers.length)
 			expect.end()
 		})
 	})
 
 	it(`Links`, async expect => {
 		expect.true(true)
-//	  let links = await CJ.getLinks()
-//	  console.log(JSON.stringify(links))
+	  let links = await CJ.getLinks()
+	  console.log(links.length)
 	})
 })

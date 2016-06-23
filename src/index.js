@@ -1,4 +1,4 @@
-import { requestMerchants, requestLinks } from './utils'
+import { requestAdvertisers, requestLinks, requestProducts, requestTransactions } from './utils'
 //import dateFormat from 'dateformat'
 
 const defaultOptions = {
@@ -11,34 +11,34 @@ export default class CommissionJunction {
     this.options = Object.assign({}, defaultOptions, options)
   }
 
-  getJoinedMerchants() {
-    return new Promise((resolve, reject) => {
-      requestMerchants({
-        joined: true,
-        developerKey: this.options.developerKey,
-      }).then(resolve).catch(reject)
-    })
-  }
-
-  getNotJoinedMerchants() {
-    return new Promise((resolve, reject) => {
-      requestMerchants({
-        joined: false,
-        developerKey: this.options.developerKey,
-      }).then(resolve).catch(reject)
-    })
-  }
-
-  getAllMerchants() {
-    return Promise.all([
-      this.getJoinedMerchants(),
-      this.getNotJoinedMerchants(),
-    ])
-    .then(resolvedPromises => resolvedPromises.reduce((previous, current) => previous.concat(current), []))
+  getAdvertisers({
+    joined = undefined,
+    advertiserIds = [],
+    advertiserName,
+    keywords,
+    mobileTrackingCertified,
+  } = {}) {
+    if (typeof joined !== 'undefined' || advertiserIds.length > 0) {
+      return new Promise((resolve, reject) => {
+        requestAdvertisers({
+          joined,
+          advertiserIds,
+          developerKey: this.options.developerKey,
+        }).then(resolve).catch(reject)
+      })
+    } else {
+      return Promise.all([
+        this.getAdvertisers({ joined: true }),
+        this.getAdvertisers({ joined: false }),
+      ])
+      .then(resolvedPromises => resolvedPromises.reduce((previous, current) => previous.concat(current), []))
+    }
   }
 
   // TODO
-  getLinks({ joined = true }) {
+  getLinks({
+    joined = true,
+  } = {}) {
     return new Promise((resolve, reject) => {
       requestLinks({
         joined,
@@ -59,27 +59,12 @@ export default class CommissionJunction {
   }
 
   // TODO
-  getTransactionsSince(dateTime) {
-
-  }
-
-  // TODO
   getProducts() {
 
   }
 
   // TODO
-  getProductsByMerchantID(merchantId) {
-
-  }
-
-  // TODO
-  searchProducts(searchTerm) {
-
-  }
-
-  // TODO
-  searchProductsByMerchantID(searchTerm, merchantId) {
+  searchProducts() {
 
   }
 }

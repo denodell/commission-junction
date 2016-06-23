@@ -1,27 +1,27 @@
 Commission Junction API Helper Methods
 --------------------------------------
 
-Contains utilities to simplify interaction with the Commission Junction Affiliate Marketing Network APIs. Provides support for the following data types:
+Contains utilities to simplify interaction with the Commission Junction Affiliate Marketing Network APIs.
+
+Provides support for the following data types:
 
  - Merchants
  - Links
  - Products
  - Transactions
 
-## Dependencies
+Bear in mind that some calls may take a little while to return if they contain a large data set. This is because we do multiple API calls to get all pages of data, which we then stitch together in the output for your benefit.
+
+## Prerequisites
 
  - Node.js / NPM
+ - Commission Junction Website ID
+ - Commission Junction Web Service Developer Key
 
 ## Install
 
 ```
 npm i commission-junction --save
-```
-
-## Test
-
-```
-npm test
 ```
 
 ## Usage
@@ -32,27 +32,39 @@ var CJ = new AffiliateNetwork.CommissionJunction({
 })
 ```
 
-### Merchants
+### Advertisers
 
-Get merchants linked to the websiteId
-
-```
-CJ.getJoinedMerchants()
-```
-
-Get merchants not linked to the websiteId
+Get a list of all advertisers in the Commission Junction system
 
 ```
-CJ.getNotJoinedMerchants()
+CJ.getAdvertisers()
 ```
 
-Get all merchants in the Commission Junction system
+Get a list of all advertisers linked to your Website ID
 
 ```
-CJ.getAllMerchants()
+CJ.getAdvertisers({
+  joined: true
+})
 ```
 
-All three services return an array of merchant objects like the following:
+Get a list of all advertisers not linked to your Website ID
+
+```
+CJ.getAdvertisers({
+  joined: false
+})
+```
+
+Get a list of specific advertisers by their unique IDs (CID)
+
+```
+CJ.getAdvertisers({
+  advertiserIds: ['1826327', ...]
+})
+```
+
+#### Advertiser Data Structure Output Example
 
 ```
 [{
@@ -98,6 +110,8 @@ All three services return an array of merchant objects like the following:
     "Advanced Link",
     "AutoMoneyDeepLink"
   ]
+}, {
+  ...
 }]
 ```
 
@@ -133,26 +147,32 @@ CJ.getTransactionsSince(dateTime)
 
 ### Products
 
-Get products by merchants linked to the websiteId
+Get products by advertisers linked to the websiteId
 
 ```
 CJ.getProducts()
 ```
 
-Get products by a specific merchant
+Get products by a specific advertiser
 
 ```
 CJ.getProductsByMerchantID('78901')
 ```
 
-Search products by merchants linked to the websiteId
+Search products by advertisers linked to the websiteId
 
 ```
 CJ.searchProducts(searchTerm)
 ```
 
-Search products by a specific merchant
+Search products by a specific advertiser
 
 ```
 CJ.searchProductsByMerchantID(searchTerm, '78901')
+```
+
+## Test
+
+```
+npm test
 ```

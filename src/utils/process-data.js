@@ -1,4 +1,4 @@
-export function normalizeMerchantData(merchants) {
+export function normalizeAdvertiserData(merchants) {
   let pluralArrayValueFields = ['actions', 'linkTypes']
   let pluralActionArrayValueFields = ['commission']
 
