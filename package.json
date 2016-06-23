@@ -1,6 +1,6 @@
 {
   "name": "commission-junction",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Commission Junction API Helper Methods For Node / JavaScript",
   "author": {
     "name": "Den Odell",
@@ -13,22 +13,21 @@
   "bugs": {
     "url": "https://github.com/denodell/commission-junction/issues"
   },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://github.com/denodell/commission-junction/blob/master/LICENSE"
-    }
-  ],
+  "license": "MIT",
   "main": "dist/index.js",
   "scripts": {
-    "postinstall": "npm run build",
-    "build": "webpack --colors  --display-error-details --config ./webpack.js",
-    "watch": "webpack --watch --verbose --colors --display-error-details --config ./webpack.js",
+    "compile": "babel --presets es2015,stage-0 -d dist/ src/",
+    "prepublish": "npm run compile",
     "start": "node dist/index.js",
-    "test": "ava"
+    "test": "npm run compile && ava"
   },
   "ava": {
-    "babel": "inherit",
+    "babel": {
+      "presets": [
+        "es2015",
+        "stage-0"
+      ]
+    },
     "failFast": true,
     "verbose": true,
     "require": [
@@ -36,10 +35,9 @@
     ]
   },
   "dependencies": {
+    "babel-cli": "^6.10.1",
     "babel-core": "^6.10.4",
     "babel-eslint": "^6.0.5",
-    "babel-loader": "^6.2.4",
-    "babel-plugin-transform-runtime": "^6.9.0",
     "babel-polyfill": "^6.9.1",
     "babel-preset-es2015": "^6.9.0",
     "babel-preset-stage-0": "^6.5.0",
@@ -48,10 +46,6 @@
     "es6-promise": "^3.2.1",
     "isomorphic-fetch": "^2.2.1",
     "lodash": "^4.13.1",
-    "object-assign": "^4.1.0",
-    "source-map-support": "^0.4.0",
-    "webpack": "^1.13.1",
-    "webpack-node-externals": "^1.2.0",
     "xml2js": "^0.4.16"
   },
   "devDependencies": {

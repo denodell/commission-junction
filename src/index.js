@@ -1,3 +1,4 @@
+import 'babel-polyfill'
 import { requestAdvertisers, requestLinks, requestProducts, requestTransactions } from './utils'
 //import dateFormat from 'dateformat'
 
