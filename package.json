@@ -1,6 +1,6 @@
 {
   "name": "commission-junction",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Commission Junction API Helper Methods For Node / JavaScript",
   "author": {
     "name": "Den Odell",
@@ -32,8 +32,7 @@
     "failFast": true,
     "verbose": true,
     "require": [
-      "babel-core/register",
-      "babel-polyfill"
+      "babel-core/register"
     ]
   },
   "dependencies": {

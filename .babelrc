@@ -7,7 +7,7 @@
     "transform-runtime"
   ],
   "env": {
-    "test": {
+    "development": {
       "sourceMaps": "inline"
     }
   },
