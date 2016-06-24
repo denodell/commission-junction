@@ -1,7 +1,6 @@
 export function normalizeAdvertiserData(merchants) {
   let pluralArrayValueFields = ['actions', 'linkTypes']
   let booleanValueFields = ['mobileTrackingCertified', 'performanceIncentives']
-  let pluralActionArrayValueFields = ['commission']
 
   return merchants.map(merchant => {
     let out = {}
@@ -54,11 +53,16 @@ export function normalizeAdvertiserData(merchants) {
 }
 
 export function normalizeLinkData(links) {
+  let numberValueFields = ['creativeWidth', 'creativeHeight']
+  let dateValueFields = ['promotionStartDate', 'promotionEndDate']
+
   return links.map(link => {
     let out = {}
     for (let linkItem in link) {
       if (link.hasOwnProperty(linkItem)) {
         out[linkItem] = link[linkItem][0]
+        out[linkItem] = numberValueFields.includes(linkItem) ? +out[linkItem] : out[linkItem]
+        out[linkItem] = dateValueFields.includes(linkItem) && out[linkItem] ? new Date(out[linkItem]) : out[linkItem]
       }
     }
     return out
