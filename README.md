@@ -28,7 +28,8 @@ npm i commission-junction --save
 
 ```
 var CJ = new AffiliateNetwork.CommissionJunction({
-  websiteId: '123456'
+  websiteId: '123456',
+  developerKey: '987654'
 })
 ```
 
