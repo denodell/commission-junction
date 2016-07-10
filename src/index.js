@@ -1,5 +1,6 @@
 import 'babel-polyfill'
-import { requestAdvertisers, requestLinks, requestProducts, requestTransactions } from './utils'
+import 'source-map-support/register'
+import { requestAdvertisers, requestLinks, requestProducts, requestTransactions, requestTransactionItems } from './utils'
 //import dateFormat from 'dateformat'
 
 const defaultOptions = {
@@ -49,14 +50,25 @@ export default class CommissionJunction {
     })
   }
 
-  // TODO
-  getVoucherCodes() {
-
+  getTransactions() {
+    return new Promise((resolve, reject) => {
+      requestTransactions({
+        websiteId: this.options.websiteId,
+        developerKey: this.options.developerKey,
+      }).then(resolve).catch(reject)
+    })
   }
 
-  // TODO
-  getTransactions() {
-
+  getTransactionItems({
+    originalActionIds = [],
+  } = {}) {
+    return new Promise((resolve, reject) => {
+      requestTransactionItems({
+        websiteId: this.options.websiteId,
+        developerKey: this.options.developerKey,
+        originalActionIds,
+      }).then(resolve).catch(reject)
+    })
   }
 
   // TODO

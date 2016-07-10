@@ -1,6 +1,6 @@
 {
   "name": "commission-junction",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Commission Junction API Helper Methods For Node / JavaScript",
   "author": {
     "name": "Den Odell",
@@ -19,7 +19,7 @@
     "compile": "babel --presets es2015,stage-0 -d dist/ src/",
     "prepublish": "npm run compile",
     "start": "node dist/index.js",
-    "test": "npm run compile && ava"
+    "test": "npm run compile && ava --serial"
   },
   "ava": {
     "babel": {
@@ -45,10 +45,12 @@
     "es6-promise": "^3.2.1",
     "isomorphic-fetch": "^2.2.1",
     "lodash": "^4.13.1",
+    "source-map-support": "^0.4.1",
     "xml2js": "^0.4.16"
   },
   "devDependencies": {
     "ava": "^0.15.2",
-    "ava-spec": "^1.0.1"
+    "ava-spec": "^1.0.1",
+    "sinon": "^1.17.4"
   }
 }

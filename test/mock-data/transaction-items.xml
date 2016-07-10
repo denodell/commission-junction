@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cj-api>
+	<item-details original-action-id="1537520">
+    <item>
+      <sku>2842154</sku>
+      <quantity>1</quantity>
+      <posting-date>2014-12-10T17:32:09-0800</posting-date>
+      <commission-id>18775604</commission-id>
+      <sale-amount>10.0</sale-amount>
+      <discount>0.0</discount>
+      <publisher-commission>0.800</publisher-commission>
+    </item>
+  </item-details>
+	<item-details original-action-id="1537521">
+    <item>
+      <sku>2842154</sku>
+      <quantity>1</quantity>
+      <posting-date>2014-12-10T17:34:09-0800</posting-date>
+      <commission-id>18775605</commission-id>
+      <sale-amount>20.0</sale-amount>
+      <discount>0.0</discount>
+      <publisher-commission>1.200</publisher-commission>
+    </item>
+  </item-details>
+</cj-api>

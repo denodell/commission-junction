@@ -39,7 +39,7 @@
     "rules": {
       "strict": 0, // controls location of Use Strict Directives. 0: required by `babel-eslint`
 
-      "indent": [2, 2, {"SwitchCase": 1, "VariableDeclarator": 1}],
+      "indent": [2, "tab", {"SwitchCase": 1, "VariableDeclarator": 1}],
 
       ////////// Possible Errors //////////
 

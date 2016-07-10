@@ -1,0 +1,983 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cj-api>
+  <advertisers total-matched="21" records-returned="21" page-number="1">
+    <advertiser>
+      <advertiser-id>1515487</advertiser-id>
+      <account-status>Active</account-status>
+      <seven-day-epc>15.92</seven-day-epc>
+      <three-month-epc>19.76</three-month-epc>
+      <language>en</language>
+      <advertiser-name>hothair</advertiser-name>
+      <program-url>http://www.hothair.co.uk</program-url>
+      <relationship-status>joined</relationship-status>
+      <mobile-tracking-certified>true</mobile-tracking-certified>
+      <network-rank>1</network-rank>
+      <primary-category>
+        <parent>Clothing/Apparel</parent>
+        <child>Women's</child>
+      </primary-category>
+      <performance-incentives>false</performance-incentives>
+      <actions>
+        <action>
+          <name>Hotair Online Sale</name>
+          <type>sale</type>
+          <id>302695</id>
+          <commission>
+            <default>10.00%</default>
+          </commission>
+        </action>
+        <action>
+          <name>Naturalimagewigs Online Sale</name>
+          <type>sale</type>
+          <id>333193</id>
+          <commission>
+            <default>10.00%</default>
+          </commission>
+        </action>
+      </actions>
+      <link-types>
+        <link-type>Text Link</link-type>
+        <link-type>Banner</link-type>
+        <link-type>OtherDeepLink</link-type>
+        <link-type>DeepLink</link-type>
+        <link-type>AutoMoneyDeepLink</link-type>
+      </link-types>
+    </advertiser>
+    <advertiser>
+      <advertiser-id>1584790</advertiser-id>
+      <account-status>Active</account-status>
+      <seven-day-epc>28.20</seven-day-epc>
+      <three-month-epc>38.56</three-month-epc>
+      <language>en</language>
+      <advertiser-name>Crucial UK</advertiser-name>
+      <program-url>http://www.crucial.com/uk</program-url>
+      <relationship-status>joined</relationship-status>
+      <mobile-tracking-certified>false</mobile-tracking-certified>
+      <network-rank>3</network-rank>
+      <primary-category>
+        <parent>Computer &amp; Electronics</parent>
+        <child>Computer HW</child>
+      </primary-category>
+      <performance-incentives>false</performance-incentives>
+      <actions>
+        <action>
+          <name>Online Sale (UK)</name>
+          <type>advanced sale</type>
+          <id>304313</id>
+          <commission>
+            <default>3.00%</default>
+          </commission>
+        </action>
+      </actions>
+      <link-types>
+        <link-type>Text Link</link-type>
+        <link-type>Banner</link-type>
+        <link-type>OtherDeepLink</link-type>
+        <link-type>DeepLink</link-type>
+        <link-type>Advanced Link</link-type>
+        <link-type>Flash Link</link-type>
+        <link-type>AutoMoneyDeepLink</link-type>
+      </link-types>
+    </advertiser>
+    <advertiser>
+      <advertiser-id>1826327</advertiser-id>
+      <account-status>Active</account-status>
+      <seven-day-epc>8.88</seven-day-epc>
+      <three-month-epc>5.31</three-month-epc>
+      <language>en</language>
+      <advertiser-name>UK2NET web hosting</advertiser-name>
+      <program-url>http://www.uk2.net</program-url>
+      <relationship-status>joined</relationship-status>
+      <mobile-tracking-certified>true</mobile-tracking-certified>
+      <network-rank>1</network-rank>
+      <primary-category>
+        <parent>Online Services</parent>
+        <child>Web Hosting/Servers</child>
+      </primary-category>
+      <performance-incentives>true</performance-incentives>
+      <actions>
+        <action>
+          <name>Online Sale</name>
+          <type>advanced sale</type>
+          <id>309262</id>
+          <commission>
+            <itemlist name="UK2 Domains" id="23565">3.00%</itemlist>
+            <itemlist name="UK2 Webhosting" id="23566">30.00%</itemlist>
+            <itemlist name="UK2 Email" id="23569">30.00%</itemlist>
+            <itemlist name="UK2 Misc" id="23570">30.00%</itemlist>
+            <itemlist name="UK2 Reseller" id="23571">30.00%</itemlist>
+            <itemlist name="UK2 Dedicated Servers" id="23572">10.00%</itemlist>
+            <itemlist name="UK2 VPS Cloud" id="23573">30.00%</itemlist>
+            <itemlist name="UK2 SSD VPS" id="23574">30.00%</itemlist>
+            <itemlist name="UK2 Website Builder" id="23575">30.00%</itemlist>
+            <default>30.00%</default>
+          </commission>
+        </action>
+        <action>
+          <name>Online Sale (VPS.net)</name>
+          <type>advanced sale</type>
+          <id>365594</id>
+          <commission>
+            <itemlist name="VPS.net-CloudSites" id="23546">GBP 50.00</itemlist>
+            <itemlist name="VPS.net-GhostBlog" id="23547">GBP 50.00</itemlist>
+            <itemlist name="VPS.net-InstantServers" id="23548">GBP 50.00</itemlist>
+            <itemlist name="VPS.net-ManagedServers" id="23549">GBP 50.00</itemlist>
+            <itemlist name="VPS.net-WordpressHosting" id="23550">GBP 50.00</itemlist>
+            <itemlist name="VPS.net-SSDVPS" id="23551">30.00%</itemlist>
+            <itemlist name="VPS.net-Miscellaneous" id="23647">30.00%</itemlist>
+            <default type="item-level">GBP 50.00</default>
+          </commission>
+        </action>
+      </actions>
+      <link-types>
+        <link-type>Text Link</link-type>
+        <link-type>Banner</link-type>
+        <link-type>OtherDeepLink</link-type>
+        <link-type>DeepLink</link-type>
+        <link-type>Advanced Link</link-type>
+        <link-type>AutoMoneyDeepLink</link-type>
+      </link-types>
+    </advertiser>
+    <advertiser>
+      <advertiser-id>1952646</advertiser-id>
+      <account-status>Active</account-status>
+      <seven-day-epc>33.54</seven-day-epc>
+      <three-month-epc>38.72</three-month-epc>
+      <language>en</language>
+      <advertiser-name>123-reg.co.uk</advertiser-name>
+      <program-url>http://www.123-reg.co.uk</program-url>
+      <relationship-status>joined</relationship-status>
+      <mobile-tracking-certified>false</mobile-tracking-certified>
+      <network-rank>3</network-rank>
+      <primary-category>
+        <parent>Online Services</parent>
+        <child>Domain Registrations</child>
+      </primary-category>
+      <performance-incentives>false</performance-incentives>
+      <actions>
+        <action>
+          <name>Online Sale</name>
+          <type>advanced sale</type>
+          <id>309109</id>
+          <commission>
+            <itemlist name="Unlimited Web Hosting" id="20364">25.00%</itemlist>
+            <itemlist name="E-Shop" id="20365">20.00%</itemlist>
+            <itemlist name="Instantsite/Instant Traffic" id="20366">15.00%</itemlist>
+            <itemlist name="SSL" id="20367">20.00%</itemlist>
+            <itemlist name="WhoIs Privacy" id="20368">10.00%</itemlist>
+            <itemlist name="Email" id="20369">15.00%</itemlist>
+            <itemlist name="VPS" id="20370">15.00%</itemlist>
+            <itemlist name="Website Builder" id="20371">15.00%</itemlist>
+            <itemlist name="Premium Domains2014" id="20372">0.10%</itemlist>
+            <itemlist name="Site Scanner " id="20373">15.00%</itemlist>
+            <itemlist name="Dedicated/Cloud Server Monthly " id="20374">15.00%</itemlist>
+            <itemlist name="Basic Cloud Servers Yearly " id="20375">GBP 40.00</itemlist>
+            <itemlist name="Dedicated Cloud Servers Yearly " id="20376">GBP 80.00</itemlist>
+            <itemlist name="GTLd Domains" id="20409">8.50%</itemlist>
+            <itemlist name="Pre-order Domains" id="21181">0.50%</itemlist>
+            <itemlist name="Domain Transfers" id="22631">GBP 0.00</itemlist>
+            <itemlist name="Domain Names" id="22632">8.50%</itemlist>
+            <default>10.00%</default>
+          </commission>
+        </action>
+      </actions>
+      <link-types>
+        <link-type>Text Link</link-type>
+        <link-type>Banner</link-type>
+        <link-type>OtherDeepLink</link-type>
+        <link-type>DeepLink</link-type>
+        <link-type>Advanced Link</link-type>
+        <link-type>Content Link</link-type>
+        <link-type>AutoMoneyDeepLink</link-type>
+      </link-types>
+    </advertiser>
+    <advertiser>
+      <advertiser-id>2107818</advertiser-id>
+      <account-status>Active</account-status>
+      <seven-day-epc>30.00</seven-day-epc>
+      <three-month-epc>44.29</three-month-epc>
+      <language>en</language>
+      <advertiser-name>Travelex UK</advertiser-name>
+      <program-url>http://www.travelex.co.uk</program-url>
+      <relationship-status>joined</relationship-status>
+      <mobile-tracking-certified>true</mobile-tracking-certified>
+      <network-rank>4</network-rank>
+      <primary-category>
+        <parent>Travel</parent>
+        <child>Accessories</child>
+      </primary-category>
+      <performance-incentives>false</performance-incentives>
+      <actions>
+        <action>
+          <name>Cash Sale</name>
+          <type>sale</type>
+          <id>373161</id>
+          <commission>
+            <default>0.50%</default>
+          </commission>
+        </action>
+      </actions>
+      <link-types>
+        <link-type>Text Link</link-type>
+        <link-type>Banner</link-type>
+        <link-type>OtherDeepLink</link-type>
+        <link-type>DeepLink</link-type>
+        <link-type>Advanced Link</link-type>
+        <link-type>Flash Link</link-type>
+        <link-type>AutoMoneyDeepLink</link-type>
+      </link-types>
+    </advertiser>
+    <advertiser>
+      <advertiser-id>2691614</advertiser-id>
+      <account-status>Active</account-status>
+      <seven-day-epc>22.39</seven-day-epc>
+      <three-month-epc>10.11</three-month-epc>
+      <language>en</language>
+      <advertiser-name>HomeAway.co.uk</advertiser-name>
+      <program-url>http://www.HomeAway.co.uk</program-url>
+      <relationship-status>joined</relationship-status>
+      <mobile-tracking-certified>false</mobile-tracking-certified>
+      <network-rank>4</network-rank>
+      <primary-category>
+        <parent>Travel</parent>
+        <child>Vacation</child>
+      </primary-category>
+      <performance-incentives>true</performance-incentives>
+      <actions>
+        <action>
+          <name>HomeAway.co.uk_New Vacation Rental Listing_Subscription</name>
+          <type>sale</type>
+          <id>331626</id>
+          <commission>
+            <default>20.00%</default>
+          </commission>
+        </action>
+        <action>
+          <name>HomeAway.co.uk_Traveler Booking_Pay Per Booking</name>
+          <type>  ✔ Commission Junction Joined Merchants (1.5s)sale</type>
+          <id>379283</id>
+          <commission>
+            <default>2.00%</default>
+          </commission>
+        </action>
+        <action>
+          <name>HomeAway.co.uk_New Vacation Rental Listing_Pay Per Booking</name>
+          <type>sale</type>
+          <id>381987</id>
+          <commission>
+            <default type="item-level">GBP 15.00</default>
+          </commission>
+        </action>
+        <action>
+          <name>HomeAway.co.uk Traveler Booking - Non Pay Per Booking</name>
+          <type>sale</type>
+          <id>381988</id>
+          <commission>
+            <default>2.00%</default>
+          </commission>
+        </action>
+        <action>
+          <name>OwnersDirect_New Vacation Rental Listing_Subscription</name>
+          <type>sale</type>
+          <id>381989</id>
+          <commission>
+            <default>20.00%</default>
+          </commission>
+        </action>
+        <action>
+          <name>OwnersDirect_New Vacation Rental Listing_Pay Per Booking</name>
+          <type>sale</type>
+          <id>381990</id>
+          <commission>
+            <default type="item-level">GBP 15.00</default>
+          </commission>
+        </action>
+        <action>
+          <name>OwnersDirect_Traveler Booking_Pay Per Booking</name>
+          <type>sale</type>
+          <id>381992</id>
+          <commission>
+            <default>2.00%</default>
+          </commission>
+        </action>
+        <action>
+          <name>OwnersDirect_Traveler Booking_Non Pay Per Booking</name>
+          <type>sale</type>
+          <id>381993</id>
+          <commission>
+            <default>2.00%</default>
+          </commission>
+        </action>
+      </actions>
+      <link-types>
+        <link-type>Text Link</link-type>
+        <link-type>Banner</link-type>
+        <link-type>OtherDeepLink</link-type>
+        <link-type>DeepLink</link-type>
+        <link-type>Advanced Link</link-type>
+        <link-type>SmartLink</link-type>
+        <link-type>Content Link</link-type>
+        <link-type>Flash Link</link-type>
+        <link-type>AutoMoneyDeepLink</link-type>
+      </link-types>
+    </advertiser>
+    <advertiser>
+      <advertiser-id>3090276</advertiser-id>
+      <account-status>Active</account-status>
+      <seven-day-epc>36.60</seven-day-epc>
+      <three-month-epc>42.98</three-month-epc>
+      <language>en</language>
+      <advertiser-name>iSUBSCRiBE</advertiser-name>
+      <program-url>http://www.isubscribe.co.uk</program-url>
+      <relationship-status>joined</relationship-status>
+      <mobile-tracking-certified>true</mobile-tracking-certified>
+      <network-rank>2</network-rank>
+      <primary-category>
+        <parent>Books/Media</parent>
+        <child>Magazines</child>
+      </primary-category>
+      <performance-incentives>false</performance-incentives>
+      <actions>
+        <action>
+          <name>ONLINE SALE (Direct Debit/Cash With Order) </name>
+          <type>advanced sale</type>
+          <id>339353</id>
+          <commission>
+            <itemlist name="DD" id="9423">10.00%</itemlist>
+            <itemlist name="CWO" id="9424">10.00%</itemlist>
+            <itemlist name="SPECIALPROMO" id="16810">GBP 5.00</itemlist>
+            <default>10.00%</default>
+          </commission>
+        </action>
+        <action>
+          <name>ONLINE big SALE (Direct Debit/Cash With Order)</name>
+          <type>advanced sale</type>
+          <id>374172</id>
+          <commission>
+            <default type="order-level">GBP 10.00</default>
+          </commission>
+        </action>
+      </actions>
+      <link-types>
+        <link-type>Text Link</link-type>
+        <link-type>Banner</link-type>
+        <link-type>OtherDeepLink</link-type>
+        <link-type>DeepLink</link-type>
+        <link-type>AutoMoneyDeepLink</link-type>
+      </link-types>
+    </advertiser>
+    <advertiser>
+      <advertiser-id>3122889</advertiser-id>
+      <account-status>Active</account-status>
+      <seven-day-epc>68.19</seven-day-epc>
+      <three-month-epc>65.40</three-month-epc>
+      <language>en</language>
+      <advertiser-name>East Midlands Trains</advertiser-name>
+      <program-url>http://www.eastmidlandstrains.co.uk</program-url>
+      <relationship-status>joined</relationship-status>
+      <mobile-tracking-certified>false</mobile-tracking-certified>
+      <network-rank>4</network-rank>
+      <primary-category>
+        <parent>Business</parent>
+        <child>Travel</child>
+      </primary-category>
+      <performance-incentives>false</performance-incentives>
+      <actions>
+        <action>
+          <name>Online Sale (EMT)</name>
+          <type>advanced sale</type>
+          <id>340114</id>
+          <commission>
+            <default>2.50%</default>
+          </commission>
+        </action>
+        <action>
+          <name>Online Sale (Other TOC)</name>
+          <type>advanced sale</type>
+          <id>340115</id>
+          <commission>
+            <default>1.00%</default>
+          </commission>
+        </action>
+      </actions>
+      <link-types>
+        <link-type>Text Link</link-type>
+        <link-type>Banner</link-type>
+        <link-type>OtherDeepLink</link-type>
+        <link-type>DeepLink</link-type>
+        <link-type>AutoMoneyDeepLink</link-type>
+      </link-types>
+    </advertiser>
+    <advertiser>
+      <advertiser-id>3553686</advertiser-id>
+      <account-status>Active</account-status>
+      <seven-day-epc>28.17</seven-day-epc>
+      <three-month-epc>28.08</three-month-epc>
+      <language>en</language>
+      <advertiser-name>Magazine.co.uk</advertiser-name>
+      <program-url>http://www.magazine.co.uk</program-url>
+      <relationship-status>joined</relationship-status>
+      <mobile-tracking-certified>false</mobile-tracking-certified>
+      <network-rank>2</network-rank>
+      <primary-category>
+        <parent>Books/Media</parent>
+        <child>Magazines</child>
+      </primary-category>
+      <performance-incentives>false</performance-incentives>
+      <actions>
+        <action>
+          <name>Online Sale</name>
+          <type>sale</type>
+          <id>348912</id>
+          <commission>
+            <default type="item-level">GBP 4.00</default>
+          </commission>
+        </action>
+      </actions>
+      <link-types>
+        <link-type>Text Link</link-type>
+        <link-type>Banner</link-type>
+        <link-type>OtherDeepLink</link-type>
+        <link-type>DeepLink</link-type>
+        <link-type>AutoMoneyDeepLink</link-type>
+      </link-types>
+    </advertiser>
+    <advertiser>
+      <advertiser-id>4044858</advertiser-id>
+      <account-status>Active</account-status>
+      <seven-day-epc>14.87</seven-day-epc>
+      <three-month-epc>9.63</three-month-epc>
+      <language>en</language>
+      <advertiser-name>Toys R Us &amp; Babies R Us</advertiser-name>
+      <program-url>http://www.toysrus.co.uk</program-url>
+      <relationship-status>joined</relationship-status>
+      <mobile-tracking-certified>true</mobile-tracking-certified>
+      <network-rank>4</network-rank>
+      <primary-category>
+        <parent>Games &amp; Toys</parent>
+        <child>Games</child>
+      </primary-category>
+      <performance-incentives>false</performance-incentives>
+      <actions>
+        <action>
+          <name>Sale (Home Delivery)</name>
+          <type>advanced sale</type>
+          <id>363160</id>
+          <commission>
+            <default>3.00%</default>
+          </commission>
+        </action>
+        <action>
+          <name>Sale - Click &amp; Collect (Hidden Action)</name>
+          <type>advanced sale</type>
+          <id>381358</id>
+          <commission>
+            <default type="item-level">GBP 0.00</default>
+          </commission>
+        </action>
+        <action>
+          <name>Sale - Mixed Orders (Hidden Action)</name>
+          <type>advanced sale</type>
+          <id>381587</id>
+          <commission>
+            <default type="item-level">GBP 0.00</default>
+          </commission>
+        </action>
+      </actions>
+      <link-types>
+        <link-type>Text Link</link-type>
+        <link-type>Banner</link-type>
+        <link-type>OtherDeepLink</link-type>
+        <link-type>DeepLink</link-type>
+        <link-type>AutoMoneyDeepLink</link-type>
+      </link-types>
+    </advertiser>
+    <advertiser>
+      <advertiser-id>4127648</advertiser-id>
+      <account-status>Active</account-status>
+      <seven-day-epc>5.03</seven-day-epc>
+      <three-month-epc>5.95</three-month-epc>
+      <language>en</language>
+      <advertiser-name>Manchester United Direct</advertiser-name>
+      <program-url>http://store.manutd.com/</program-url>
+      <relationship-status>joined</relationship-status>
+      <mobile-tracking-certified>false</mobile-tracking-certified>
+      <network-rank>2</network-rank>
+      <primary-category>
+        <parent>Sports &amp; Fitness</parent>
+        <child>Sports</child>
+      </primary-category>
+      <performance-incentives>false</performance-incentives>
+      <actions>
+        <action>
+          <name>New Customer</name>
+          <type>advanced sale</type>
+          <id>378787</id>
+          <commission>
+            <default>5.00%</default>
+          </commission>
+        </action>
+        <action>
+          <name>Existing Customer</name>
+          <type>advanced sale</type>
+          <id>378788</id>
+          <commission>
+            <default>5.00%</default>
+          </commission>
+        </action>
+      </actions>
+      <link-types>
+        <link-type>Text Link</link-type>
+        <link-type>Banner</link-type>
+        <link-type>OtherDeepLink</link-type>
+        <link-type>DeepLink</link-type>
+        <link-type>AutoMoneyDeepLink</link-type>
+      </link-types>
+    </advertiser>
+    <advertiser>
+      <advertiser-id>4308809</advertiser-id>
+      <account-status>Active</account-status>
+      <seven-day-epc>32.47</seven-day-epc>
+      <three-month-epc>20.42</three-month-epc>
+      <language>en</language>
+      <advertiser-name>Vax</advertiser-name>
+      <program-url>http://www.vax.co.uk/</program-url>
+      <relationship-status>joined</relationship-status>
+      <mobile-tracking-certified>false</mobile-tracking-certified>
+      <network-rank>2</network-rank>
+      <primary-category>
+        <parent>Home &amp; Garden</parent>
+        <child>Home Appliances</child>
+      </primary-category>
+      <performance-incentives>true</performance-incentives>
+      <actions>
+        <action>
+          <name>Sale</name>
+          <type>sale</type>
+          <id>372649</id>
+          <commission>
+            <default>3.00%</default>
+          </commission>
+        </action>
+      </actions>
+      <link-types>
+        <link-type>Text Link</link-type>
+        <link-type>Banner</link-type>
+        <link-type>OtherDeepLink</link-type>
+        <link-type>DeepLink</link-type>
+        <link-type>AutoMoneyDeepLink</link-type>
+      </link-types>
+    </advertiser>
+    <advertiser>
+      <advertiser-id>4332652</advertiser-id>
+      <account-status>Active</account-status>
+      <seven-day-epc>0.00</seven-day-epc>
+      <three-month-epc>23.20</three-month-epc>
+      <language>en</language>
+      <advertiser-name>(WHUK) WebHosting UK COM Ltd.</advertiser-name>
+      <program-url>http://www.webhosting.uk.com</program-url>
+      <relationship-status>joined</relationship-status>
+      <mobile-tracking-certified>false</mobile-tracking-certified>
+      <network-rank>1</network-rank>
+      <primary-category>
+        <parent>Online Services</parent>
+        <child>Web Hosting/Servers</child>
+      </primary-category>
+      <performance-incentives>true</performance-incentives>
+      <actions>
+        <action>
+          <name>Sale</name>
+          <type>advanced sale</type>
+          <id>373527</id>
+          <commission>
+            <default>60.00%</default>
+          </commission>
+        </action>
+      </actions>
+      <link-types>
+        <link-type>Text Link</link-type>
+        <link-type>Banner</link-type>
+        <link-type>OtherDeepLink</link-type>
+        <link-type>DeepLink</link-type>
+        <link-type>AutoMoneyDeepLink</link-type>
+      </link-types>
+    </advertiser>
+    <advertiser>
+      <advertiser-id>4356401</advertiser-id>
+      <account-status>Active</account-status>
+      <seven-day-epc>26.45</seven-day-epc>
+      <three-month-epc>11.36</three-month-epc>
+      <language>en</language>
+      <advertiser-name>NBA Europe Store</advertiser-name>
+      <program-url>http://www.nbastore.eu</program-url>
+      <relationship-status>joined</relationship-status>
+      <mobile-tracking-certified>false</mobile-tracking-certified>
+      <network-rank>3</network-rank>
+      <primary-category>
+        <parent>
+        </parent>
+        <child>Sports &amp; Fitness</child>
+      </primary-category>
+      <performance-incentives>false</performance-incentives>
+      <actions>
+        <action>
+          <name>New Customer</name>
+          <type>advanced sale</type>
+          <id>378783</id>
+          <commission>
+            <default>5.00%</default>
+          </commission>
+        </action>
+        <action>
+          <name>Existing Customer</name>
+          <type>advanced sale</type>
+          <id>378784</id>
+          <commission>
+            <default>5.00%</default>
+          </commission>
+        </action>
+      </actions>
+      <link-types>
+        <link-type>Text Link</link-type>
+        <link-type>Banner</link-type>
+        <link-type>OtherDeepLink</link-type>
+        <link-type>DeepLink</link-type>
+        <link-type>AutoMoneyDeepLink</link-type>
+      </link-types>
+    </advertiser>
+    <advertiser>
+      <advertiser-id>4510255</advertiser-id>
+      <account-status>Active</account-status>
+      <seven-day-epc>8.03</seven-day-epc>
+      <three-month-epc>5.64</three-month-epc>
+      <language>en</language>
+      <advertiser-name>Everton Direct</advertiser-name>
+      <program-url>http://evertondirect.evertonfc.com</program-url>
+      <relationship-status>joined</relationship-status>
+      <mobile-tracking-certified>false</mobile-tracking-certified>
+      <network-rank>1</network-rank>
+      <primary-category>
+        <parent>Sports &amp; Fitness</parent>
+        <child>Apparel</child>
+      </primary-category>
+      <performance-incentives>false</performance-incentives>
+      <actions>
+        <action>
+          <name>New Customer</name>
+          <type>advanced sale</type>
+          <id>378996</id>
+          <commission>
+            <default>5.00%</default>
+          </commission>
+        </action>
+        <action>
+          <name>Existing Customer</name>
+          <type>advanced sale</type>
+          <id>378997</id>
+          <commission>
+            <default>5.00%</default>
+          </commission>
+        </action>
+      </actions>
+      <link-types>
+        <link-type>Text Link</link-type>
+        <link-type>Banner</link-type>
+        <link-type>OtherDeepLink</link-type>
+        <link-type>DeepLink</link-type>
+        <link-type>AutoMoneyDeepLink</link-type>
+      </link-types>
+    </advertiser>
+    <advertiser>
+      <advertiser-id>4510271</advertiser-id>
+      <account-status>Active</account-status>
+      <seven-day-epc>18.91</seven-day-epc>
+      <three-month-epc>13.56</three-month-epc>
+      <language>en</language>
+      <advertiser-name>The Formula 1 Store</advertiser-name>
+      <program-url>http://f1store.formula1.com</program-url>
+      <relationship-status>joined</relationship-status>
+      <mobile-tracking-certified>false</mobile-tracking-certified>
+      <network-rank>2</network-rank>
+      <primary-category>
+        <parent>Sports &amp; Fitness</parent>
+        <child>Professional Sports Organizations</child>
+      </primary-category>
+      <performance-incentives>false</performance-incentives>
+      <actions>
+        <action>
+          <name>New Customer</name>
+          <type>advanced sale</type>
+          <id>379008</id>
+          <commission>
+            <default>5.00%</default>
+          </commission>
+        </action>
+        <action>
+          <name>Existing Customer</name>
+          <type>advanced sale</type>
+          <id>379009</id>
+          <commission>
+            <default>5.00%</default>
+          </commission>
+        </action>
+      </actions>
+      <link-types>
+        <link-type>Text Link</link-type>
+        <link-type>Banner</link-type>
+        <link-type>OtherDeepLink</link-type>
+        <link-type>DeepLink</link-type>
+        <link-type>AutoMoneyDeepLink</link-type>
+      </link-types>
+    </advertiser>
+    <advertiser>
+      <advertiser-id>4510256</advertiser-id>
+      <account-status>Active</account-status>
+      <seven-day-epc>5.29</seven-day-epc>
+      <three-month-epc>7.21</three-month-epc>
+      <language>en</language>
+      <advertiser-name>Manchester City Shop</advertiser-name>
+      <program-url>http://shop.mancity.com</program-url>
+      <relationship-status>joined</relationship-status>
+      <mobile-tracking-certified>false</mobile-tracking-certified>
+      <network-rank>1</network-rank>
+      <primary-category>
+        <parent>Sports &amp; Fitness</parent>
+        <child>Apparel</child>
+      </primary-category>
+      <performance-incentives>false</performance-incentives>
+      <actions>
+        <action>
+          <name>New Customer</name>
+          <type>advanced sale</type>
+          <id>378998</id>
+          <commission>
+            <default>5.00%</default>
+          </commission>
+        </action>
+        <action>
+          <name>Existing Customer</name>
+          <type>advanced sale</type>
+          <id>378999</id>
+          <commission>
+            <default>5.00%</default>
+          </commission>
+        </action>
+      </actions>
+      <link-types>
+        <link-type>Text Link</link-type>
+        <link-type>Banner</link-type>
+        <link-type>OtherDeepLink</link-type>
+        <link-type>DeepLink</link-type>
+        <link-type>AutoMoneyDeepLink</link-type>
+      </link-types>
+    </advertiser>
+    <advertiser>
+      <advertiser-id>4510280</advertiser-id>
+      <account-status>Active</account-status>
+      <seven-day-epc>23.22</seven-day-epc>
+      <three-month-epc>11.39</three-month-epc>
+      <language>en</language>
+      <advertiser-name>McLaren Store</advertiser-name>
+      <program-url>http://mclarenstore.com</program-url>
+      <relationship-status>joined</relationship-status>
+      <mobile-tracking-certified>false</mobile-tracking-certified>
+      <network-rank>1</network-rank>
+      <primary-category>
+        <parent>Sports &amp; Fitness</parent>
+        <child>Apparel</child>
+      </primary-category>
+      <performance-incentives>false</performance-incentives>
+      <actions>
+        <action>
+          <name>New Customer</name>
+          <type>advanced sale</type>
+          <id>379054</id>
+          <commission>
+            <default>5.00%</default>
+          </commission>
+        </action>
+        <action>
+          <name>Existing Customer</name>
+          <type>advanced sale</type>
+          <id>379055</id>
+          <commission>
+            <default>5.00%</default>
+          </commission>
+        </action>
+      </actions>
+      <link-types>
+        <link-type>Text Link</link-type>
+        <link-type>Banner</link-type>
+        <link-type>OtherDeepLink</link-type>
+        <link-type>DeepLink</link-type>
+        <link-type>AutoMoneyDeepLink</link-type>
+      </link-types>
+    </advertiser>
+    <advertiser>
+      <advertiser-id>4607953</advertiser-id>
+      <account-status>Active</account-status>
+      <seven-day-epc>15.77</seven-day-epc>
+      <three-month-epc>48.07</three-month-epc>
+      <language>en</language>
+      <advertiser-name>McAfee UK</advertiser-name>
+      <program-url>http://www.mcafeestore.com</program-url>
+      <relationship-status>joined</relationship-status>
+      <mobile-tracking-certified>true</mobile-tracking-certified>
+      <network-rank>3</network-rank>
+      <primary-category>
+        <parent>Computer &amp; Electronics</parent>
+        <child>Computer SW</child>
+      </primary-category>
+      <performance-incentives>false</performance-incentives>
+      <actions>
+        <action>
+          <name>New Customer Sale</name>
+          <type>advanced sale</type>
+          <id>382607</id>
+          <commission>
+            <default>25.00%</default>
+          </commission>
+        </action>
+      </actions>
+      <link-types>
+        <link-type>Text Link</link-type>
+        <link-type>Banner</link-type>
+        <link-type>Advanced Link</link-type>
+      </link-types>
+    </advertiser>
+    <advertiser>
+      <advertiser-id>4703026</advertiser-id>
+      <account-status>Active</account-status>
+      <seven-day-epc>New</seven-day-epc>
+      <three-month-epc>New</three-month-epc>
+      <language>en</language>
+      <advertiser-name>TM Lewin GLOBAL</advertiser-name>
+      <program-url>http://www.tmlewin.co.uk</program-url>
+      <relationship-status>joined</relationship-status>
+      <mobile-tracking-certified>true</mobile-tracking-certified>
+      <network-rank>New</network-rank>
+      <primary-category>
+        <parent>Clothing/Apparel</parent>
+        <child>Men's</child>
+      </primary-category>
+      <performance-incentives>false</performance-incentives>
+      <actions>
+        <action>
+          <name>UK Sale - New Customer</name>
+          <type>sale</type>
+          <id>385258</id>
+          <commission>
+            <default>5.00%</default>
+          </commission>
+        </action>
+        <action>
+          <name>UK Sale - Existing Customer</name>
+          <type>sale</type>
+          <id>385259</id>
+          <commission>
+            <default>5.00%</default>
+          </commission>
+        </action>
+        <action>
+          <name>AUS Sale - New Customer</name>
+          <type>sale</type>
+          <id>385384</id>
+          <commission>
+            <default>5.00%</default>
+          </commission>
+        </action>
+        <action>
+          <name>AUS Sale - Existing Customer</name>
+          <type>sale</type>
+          <id>385385</id>
+          <commission>
+            <default>5.00%</default>
+          </commission>
+        </action>
+        <action>
+          <name>US Sale - New Customer</name>
+          <type>sale</type>
+          <id>385386</id>
+          <commission>
+            <default>5.00%</default>
+          </commission>
+        </action>
+        <action>
+          <name>US Sale - Existing Customer</name>
+          <type>sale</type>
+          <id>385387</id>
+          <commission>
+            <default>5.00%</default>
+          </commission>
+        </action>
+      </actions>
+      <link-types>
+        <link-type>Text Link</link-type>
+        <link-type>Banner</link-type>
+        <link-type>OtherDeepLink</link-type>
+        <link-type>DeepLink</link-type>
+        <link-type>AutoMoneyDeepLink</link-type>
+      </link-types>
+    </advertiser>
+    <advertiser>
+      <advertiser-id>4718153</advertiser-id>
+      <account-status>Active</account-status>
+      <seven-day-epc>New</seven-day-epc>
+      <three-month-epc>New</three-month-epc>
+      <language>en</language>
+      <advertiser-name>Lookfantastic</advertiser-name>
+      <program-url>http://www.lookfantastic.com/home.dept</program-url>
+      <relationship-status>joined</relationship-status>
+      <mobile-tracking-certified>true</mobile-tracking-certified>
+      <network-rank>New</network-rank>
+      <primary-category>
+        <parent>Beauty</parent>
+        <child>Cosmetics</child>
+      </primary-category>
+      <performance-incentives>false</performance-incentives>
+      <actions>
+        <action>
+          <name>Lookfantastic Purchase - Desktop</name>
+          <type>advanced sale</type>
+          <id>385206</id>
+          <commission>
+            <itemlist name="default" id="27160">7.00%</itemlist>
+            <itemlist name="health" id="27172">7.00%</itemlist>
+            <itemlist name="technology" id="27175">4.00%</itemlist>
+            <itemlist name="bodycare" id="27183">7.00%</itemlist>
+            <itemlist name="vitamins" id="27195">7.00%</itemlist>
+            <itemlist name="beautybox" id="27199">2.00%</itemlist>
+            <itemlist name="beautybox3month" id="27201">USD 8.00</itemlist>
+            <itemlist name="beautybox6month" id="27202">USD 14.00</itemlist>
+            <itemlist name="beautybox12month" id="27203">USD 28.00</itemlist>
+            <default>7.00%</default>
+          </commission>
+        </action>
+        <action>
+          <name>Lookfantastic Purchase - Mobile</name>
+          <type>advanced sale</type>
+          <id>385207</id>
+          <commission>
+            <itemlist name="default" id="27160">7.00%</itemlist>
+            <itemlist name="health" id="27172">7.00%</itemlist>
+            <itemlist name="technology" id="27175">4.00%</itemlist>
+            <itemlist name="bodycare" id="27183">7.00%</itemlist>
+            <itemlist name="vitamins" id="27195">7.00%</itemlist>
+            <itemlist name="beautybox" id="27199">2.00%</itemlist>
+            <itemlist name="beautybox3month" id="27201">USD 8.00</itemlist>
+            <itemlist name="beautybox6month" id="27202">USD 14.00</itemlist>
+            <itemlist name="beautybox12month" id="27203">USD 28.00</itemlist>
+            <default>7.00%</default>
+          </commission>
+        </action>
+      </actions>
+      <link-types>
+        <link-type>Text Link</link-type>
+        <link-type>Banner</link-type>
+        <link-type>OtherDeepLink</link-type>
+        <link-type>DeepLink</link-type>
+        <link-type>AutoMoneyDeepLink</link-type>
+      </link-types>
+    </advertiser>
+  </advertisers>
+</cj-api>

@@ -68,3 +68,49 @@ export function normalizeLinkData(links) {
     return out
   })
 }
+
+export function normalizeTransactionData(transactions) {
+  let booleanValueFields = ['original']
+  let numberValueFields = ['commissionAmount', 'orderDiscount', 'saleAmount']
+  let dateValueFields = ['eventDate', 'lockingDate', 'postingDate']
+
+  return transactions.map(transaction => {
+    let out = {}
+
+    for (let dataItem in transaction) {
+      if (transaction.hasOwnProperty(dataItem)) {
+        out[dataItem] = transaction[dataItem][0]
+        out[dataItem] = booleanValueFields.includes(dataItem) ? out[dataItem] === 'true' : out[dataItem]
+        out[dataItem] = numberValueFields.includes(dataItem) ? +out[dataItem] : out[dataItem]
+        out[dataItem] = dateValueFields.includes(dataItem) && out[dataItem] ? new Date(out[dataItem]) : out[dataItem]
+      }
+    }
+
+    return out
+  })
+}
+
+export function normalizeTransactionItemData(transactionItems) {
+  let numberValueFields = ['quantity', 'publisherCommission', 'discount', 'saleAmount']
+  let dateValueFields = ['postingDate']
+
+  return transactionItems.map(transactionItem => {
+    let out = {
+      originalActionId: transactionItem.originalActionId,
+    }
+
+    out.items = transactionItem.item.map(item => {
+      let out = {}
+      for (let dataItem in item) {
+        if (item.hasOwnProperty(dataItem)) {
+          out[dataItem] = item[dataItem][0]
+          out[dataItem] = numberValueFields.includes(dataItem) ? +out[dataItem] : out[dataItem]
+          out[dataItem] = dateValueFields.includes(dataItem) && out[dataItem] ? new Date(out[dataItem]) : out[dataItem]
+        }
+      }
+      return out
+    })
+
+    return out
+  })
+}

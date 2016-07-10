@@ -1,4 +1,4 @@
-import utils, { fetchXmlAsJson } from './fetch'
+import { fetchXmlAsJson } from './fetch'
 import _ from 'lodash'
 
 function fetchDataPage(url, developerKey, pageNumber = 1) {
@@ -20,26 +20,37 @@ export async function requestData(url, developerKey, rootNodeName, dataNodeName)
       throw data.errorMessage[0]
     }
 
-    outputData = outputData.concat(data[rootNodeName][0][dataNodeName])
-
-    meta = data[rootNodeName][0].$
-    totalMatched = +meta['total-matched']
-    recordsReturned = +meta['records-returned']
-    currentPageNumber = +meta['page-number']
-    totalPages = Math.ceil(totalMatched / recordsReturned)
-
-    if (currentPageNumber * recordsReturned >= totalMatched) {
-      return Promise.resolve(outputData)
-    } else {
-      let dataPages = await Promise.all(_.range(2, totalPages + 1).map(pageNumber => fetchDataPage(url, developerKey, pageNumber)))
-      dataPages.forEach(data => {
-        if (data.errorMessage) {
-          throw data.errorMessage[0]
-        }
-
-        outputData = outputData.concat(data[rootNodeName][0][dataNodeName])
+    if (data[rootNodeName].length > 1) {
+      outputData = outputData.concat(data[rootNodeName])
+      outputData = outputData.map(data => {
+        let out = Object.assign({}, data.$)
+        delete data.$
+        out = Object.assign({}, out, data)
+        return out;
       })
       return Promise.resolve(outputData)
+    } else {
+      outputData = outputData.concat(data[rootNodeName][0][dataNodeName])
+
+      meta = data[rootNodeName][0].$
+      totalMatched = +meta.totalMatched || totalMatched
+      recordsReturned = +meta.recordsReturned || recordsReturned
+      currentPageNumber = +meta.pageNumber || currentPageNumber
+      totalPages = Math.ceil(totalMatched / recordsReturned) || totalPages
+
+      if (!recordsReturned || currentPageNumber * recordsReturned >= totalMatched) {
+        return Promise.resolve(outputData)
+      } else {
+        let dataPages = await Promise.all(_.range(2, totalPages + 1).map(pageNumber => fetchDataPage(url, developerKey, pageNumber)))
+        dataPages.forEach(data => {
+          if (data.errorMessage) {
+            throw data.errorMessage[0]
+          }
+
+          outputData = outputData.concat(data[rootNodeName][0][dataNodeName])
+        })
+        return Promise.resolve(outputData)
+      }
     }
   } catch (err) {
     throw new Error(err)

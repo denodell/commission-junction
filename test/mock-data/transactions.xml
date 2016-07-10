@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cj-api>
+  <commissions total-matched="1">
+    <commission>
+      <action-status>new</action-status>
+      <action-type>lead</action-type>
+      <aid>12345678</aid>
+      <commission-id>1234567890</commission-id>
+      <country></country>
+      <event-date>2010-05-08T08:08:55-0700</event-date>
+      <locking-date>2010-06-10</locking-date>
+      <order-id>123456</order-id>
+      <original>true</original>
+      <original-action-id>1234567890</original-action-id>
+      <posting-date>2010-05-08T10:01:22-0700</posting-date>
+      <website-id>1234567</website-id>
+      <cid>1234567</cid>
+      <advertiser-name>Merchant</advertiser-name>
+      <commission-amount>0</commission-amount>
+      <order-discount>0</order-discount>
+      <sid>unique-user-id</sid>
+      <sale-amount>0</sale-amount>
+    </commission>
+  </commissions>
+</cj-api>

@@ -1,6 +1,8 @@
 Commission Junction API Helper Methods
 --------------------------------------
 
+_Warning: ALPHA release - very unstable API_
+
 Contains utilities to simplify interaction with the Commission Junction Affiliate Marketing Network APIs.
 
 Provides support for the following data types:
@@ -27,7 +29,7 @@ npm i commission-junction --save
 ## Usage
 
 ```
-var CJ = new AffiliateNetwork.CommissionJunction({
+var CJ = new CommissionJunction({
   websiteId: '123456',
   developerKey: '987654'
 })
@@ -118,35 +120,27 @@ CJ.getAdvertisers({
 
 ### Links
 
-Get links linked to the websiteId
+Get links & voucher codes linked to the websiteId
 
 ```
 CJ.getLinks()
 ```
 
-### Voucher Codes
+### Commssions
 
-Get voucher codes linked to the websiteId
-
-```
-CJ.getLinks()
-```
-
-### Transactions
-
-Get transactions linked to the websiteId
+Get commission transactions linked to the websiteId
 
 ```
 CJ.getTransactions()
 ```
 
-Get transactions linked to the websiteId since a specific date/time
+Get commission item detail related to a specific commission transaction(s)
 
 ```
-CJ.getTransactionsSince(dateTime)
+CJ.getTransactionItems({ originalActionIds: ['123456'] })
 ```
 
-### Products
+### Products - TODO
 
 Get products by advertisers linked to the websiteId
 
