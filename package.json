@@ -1,6 +1,6 @@
 {
   "name": "commission-junction",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Commission Junction API Helper Methods For Node / JavaScript",
   "author": {
     "name": "Den Odell",

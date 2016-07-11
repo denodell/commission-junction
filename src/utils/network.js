@@ -30,7 +30,9 @@ export async function requestData(url, developerKey, rootNodeName, dataNodeName)
       })
       return Promise.resolve(outputData)
     } else {
-      outputData = outputData.concat(data[rootNodeName][0][dataNodeName])
+      if (data[rootNodeName][0][dataNodeName]) {
+        outputData = outputData.concat(data[rootNodeName][0][dataNodeName])
+      }
 
       meta = data[rootNodeName][0].$
       totalMatched = +meta.totalMatched || totalMatched

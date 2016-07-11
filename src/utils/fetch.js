@@ -30,7 +30,6 @@ function fetchXml(url, headers) {
     .then(response => {
       if (!response.ok) {
         throw response.statusText
-        return
       }
       return response
     })
