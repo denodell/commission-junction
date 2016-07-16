@@ -46,6 +46,10 @@ export function requestTransactions({ developerKey, websiteId }) {
 export function requestTransactionItems({ developerKey, websiteId, originalActionIds = [] }) {
   let url = `https://commission-detail.api.cj.com/v3/item-detail/${originalActionIds.join(',')}`
 
+  if (originalActionIds.length === 0) {
+    return Promise.resolve([])
+  }
+
   return new Promise(async function(resolve, reject) {
     try {
       let transactionItems = await requestData(url, developerKey, 'itemDetails')

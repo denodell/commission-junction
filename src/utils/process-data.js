@@ -99,7 +99,7 @@ export function normalizeTransactionItemData(transactionItems) {
       originalActionId: transactionItem.originalActionId,
     }
 
-    out.items = transactionItem.item.map(item => {
+    out.items = (transactionItem.item || []).map(item => {
       let out = {}
       for (let dataItem in item) {
         if (item.hasOwnProperty(dataItem)) {
