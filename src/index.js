@@ -21,12 +21,10 @@ export default class CommissionJunction {
     mobileTrackingCertified,
   } = {}) {
     if (typeof joined !== 'undefined' || advertiserIds.length > 0) {
-      return new Promise((resolve, reject) => {
-        requestAdvertisers({
-          joined,
-          advertiserIds,
-          developerKey: this.options.developerKey,
-        }).then(resolve).catch(reject)
+      return requestAdvertisers({
+        joined,
+        advertiserIds,
+        developerKey: this.options.developerKey,
       })
     } else {
       return Promise.all([
@@ -41,33 +39,27 @@ export default class CommissionJunction {
   getLinks({
     joined = true,
   } = {}) {
-    return new Promise((resolve, reject) => {
-      requestLinks({
-        joined,
-        websiteId: this.options.websiteId,
-        developerKey: this.options.developerKey,
-      }).then(resolve).catch(reject)
+    return requestLinks({
+      joined,
+      websiteId: this.options.websiteId,
+      developerKey: this.options.developerKey,
     })
   }
 
   getTransactions() {
-    return new Promise((resolve, reject) => {
-      requestTransactions({
-        websiteId: this.options.websiteId,
-        developerKey: this.options.developerKey,
-      }).then(resolve).catch(reject)
+    return requestTransactions({
+      websiteId: this.options.websiteId,
+      developerKey: this.options.developerKey,
     })
   }
 
   getTransactionItems({
     originalActionIds = [],
   } = {}) {
-    return new Promise((resolve, reject) => {
-      requestTransactionItems({
-        websiteId: this.options.websiteId,
-        developerKey: this.options.developerKey,
-        originalActionIds,
-      }).then(resolve).catch(reject)
+    return requestTransactionItems({
+      websiteId: this.options.websiteId,
+      developerKey: this.options.developerKey,
+      originalActionIds,
     })
   }
 
