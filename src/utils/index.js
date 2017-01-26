@@ -17,13 +17,14 @@ export function requestAdvertisers({ developerKey, joined }) {
   })
 }
 
-export function requestLinks({ developerKey, websiteId, joined }) {
+export function requestLinks({ developerKey, websiteId, joined, vouchersOnly = false }) {
   let url = (websiteId, joined) => `https://link-search.api.cj.com/v3/link-search?website-id=${websiteId}&advertiser-ids=${joined ? 'joined': 'notjoined'}&records-per-page=${recordsPerPage}&page-number=${startPageNumber}`
 
   return new Promise(async function(resolve, reject) {
     try {
       let links = await requestData(url(websiteId, joined), developerKey, 'links', 'link')
-      resolve(normalizeLinkData(links))
+			const output = normalizeLinkData(links)
+      resolve(vouchersOnly ? output.filter(link => !!link.code) : output)
     } catch (err) {
       reject(err)
     }

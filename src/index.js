@@ -35,7 +35,6 @@ export default class CommissionJunction {
     }
   }
 
-  // TODO
   getLinks({
     joined = true,
   } = {}) {
@@ -43,6 +42,17 @@ export default class CommissionJunction {
       joined,
       websiteId: this.options.websiteId,
       developerKey: this.options.developerKey,
+    })
+  }
+
+	getVouchers({
+    joined = true,
+  } = {}) {
+    return requestLinks({
+      joined,
+      websiteId: this.options.websiteId,
+      developerKey: this.options.developerKey,
+			vouchersOnly: true,
     })
   }
 
