@@ -24,7 +24,7 @@ export function requestLinks({ developerKey, websiteId, joined, vouchersOnly = f
     try {
       let links = await requestData(url(websiteId, joined), developerKey, 'links', 'link')
 			const output = normalizeLinkData(links)
-      resolve(vouchersOnly ? output.filter(link => !!link.code) : output)
+      resolve(vouchersOnly ? output.filter(link => !!link.couponCode) : output)
     } catch (err) {
       reject(err)
     }
